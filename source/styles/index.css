@@ -1,0 +1,8 @@
+* {
+    background-color: black;
+    color: antiquewhite;
+}
+
+div.flex {
+    display: flex;
+}
