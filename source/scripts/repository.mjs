@@ -1,9 +1,10 @@
 /** @format */
 
-export async function getImage(path) {
-    return new Promise((resolve) => {
+export async function getImage(name) {
+    return new Promise((resolve, reject) => {
         const image = new Image();
-        image.src = path;
         image.onload = () => resolve(image);
+        image.onerror = reject;
+        image.src = `images/${name}`;
     });
 }

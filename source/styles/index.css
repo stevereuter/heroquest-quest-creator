@@ -1,8 +1,6 @@
-* {
-    background-color: black;
-    color: antiquewhite;
+body {
+    padding: 20px;
 }
-
 div.flex {
     display: flex;
 }
